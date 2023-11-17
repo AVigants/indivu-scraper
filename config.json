@@ -1,0 +1,89 @@
+[
+  {
+    "site": "Wolt",
+    "XMLs": ["https://cdn.wolt.com/prod_riga_sitemap.xml"],
+    "chunk_results": 50,
+    "data": [
+      {
+        "title": "script",
+        "selector": "script.query-state"
+      }
+    ]
+  },
+
+  {
+    "site": "Barbora",
+    "XMLs": ["https://www.barbora.lv/sitemap.xml"],
+    "data": [
+      {
+        "title": "product name",
+        "selector": ".b-product-info--title"
+      },
+      {
+        "title": "product price",
+        "selector": "#fti-product-info-price > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1)"
+      },
+      {
+        "title": "product measured in raw",
+        "selector": "#fti-product-info-price > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)"
+      },
+      {
+        "title": "product info",
+        "selector": ".b-product-info--info-2 > dd:nth-child(2)"
+      },
+      {
+        "title": "product ingredients",
+        "selector": ".b-product-info--info-2 > dd:nth-child(4)"
+      },
+
+      {
+        "title": "nutritional information",
+        "selector": ".table"
+      },
+      {
+        "title": "product picture",
+        "selector": "div.b-block-slider--inner:nth-child(2) > div:nth-child(1) > img:nth-child(1)",
+        "target": "src"
+      },
+      {
+        "title": "product info raw",
+        "selector": ".b-product-info--info-2"
+      }
+    ]
+  },
+
+  {
+    "site": "Rimi",
+    "XMLs": [
+      "https://www.rimi.lv/e-veikals/sitemaps/products/siteMap_rimiLvSite_Product_en_1.xml",
+      "https://www.rimi.lv/e-veikals/sitemaps/products/siteMap_rimiLvSite_Product_en_2.xml",
+      "https://www.rimi.lv/e-veikals/sitemaps/products/siteMap_rimiLvSite_Product_en_3.xml",
+      "https://www.rimi.lv/e-veikals/sitemaps/products/siteMap_rimiLvSite_Product_en_4.xml",
+      "https://www.rimi.lv/e-veikals/sitemaps/products/siteMap_rimiLvSite_Product_en_5.xml"
+    ],
+    "skipif": { "selector": "h1.error-page__heading" },
+    "data": [
+      {
+        "title": "name",
+        "selector": "h3.name"
+      },
+      {
+        "title": "price",
+        "selector": "div.price"
+      },
+      {
+        "title": "picture",
+        "target": "src",
+        "selector": ".product__main-image > img"
+      },
+      {
+        "title": "category",
+        "selectors": "div.section-header__container>p>a"
+      },
+      {
+        "title": "details",
+        "selector": "div.product-details"
+      }
+    ]
+  }
+]
